@@ -1,0 +1,32 @@
+{
+  "name": "sistema-admin",
+  "version": "1.0.0",
+  "description": "Sistema de Administração de Ambientes e Permissões",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "pm2:start": "pm2 start server.js --name sistema-admin --update-env",
+    "pm2:stop": "pm2 stop sistema-admin",
+    "pm2:restart": "pm2 restart sistema-admin --update-env",
+    "pm2:logs": "pm2 logs sistema-admin",
+    "pm2:status": "pm2 status sistema-admin"
+  },
+  "keywords": [
+    "admin",
+    "ambiente",
+    "permissões"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^1.13.2",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "helmet": "^7.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

@@ -1,0 +1,50 @@
+# Dependencies
+node_modules/
+package-lock.json
+
+# Environment variables
+.env
+.env-*
+*.env
+
+# Data files (pode conter informações sensíveis)
+data/
+*.json
+!package.json
+!testsprite_tests/**/*.json
+!testsprite_tests/tmp/code_summary.json
+!testsprite_tests/tmp/config.json
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# TestSprite temporary files
+testsprite_tests/tmp/test_results.json
+testsprite_tests/tmp/raw_report.md
+testsprite_tests/tmp/prd_files/
+
+# PM2
+.pm2/
+ecosystem.config.js
+
+# SSL certificates
+*.pem
+*.key
+*.crt
+
+# Build files
+dist/
+build/
